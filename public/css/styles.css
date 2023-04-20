@@ -1,0 +1,41 @@
+/* Local CSS */
+
+body{
+        background-color: #E4E9FD;
+        background-image: -webkit-linear-gradient(65deg, #7a93dd 50%, #E4E9FD 50%);
+        min-height: 1000px;
+}
+
+h1{
+    font-family: 'Bona Nova', serif;
+}
+
+.nav-item{
+    margin: auto 1rem;
+}
+.nav-item:hover{
+    box-shadow: 0 0 50px rgba(115, 112, 112, 0.2); 
+}
+
+.nav-item:focus{
+    color: white;
+}
+
+.nav-item:active{
+    color: green;
+}
+
+.footer-page{
+    /* rem = 16px */
+    /* margin - מסגרת */
+    margin: 2rem auto;
+    /* padding - מרווח */
+    padding: 2.5rem;
+    text-align: center;
+    background-color: rgb(192, 219, 231);
+}
+
+.center-container{
+    margin: 1rem auto;
+    text-align: center;
+}
