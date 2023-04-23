@@ -1,13 +1,19 @@
 /* Local CSS */
 
 body{
-        background-color: #E4E9FD;
-        background-image: -webkit-linear-gradient(65deg, #7a93dd 50%, #E4E9FD 50%);
-        min-height: 1000px;
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #7a93dd 50%, #E4E9FD 50%);
+    /* min-height: 100px; */
+    margin: 0;
 }
 
 h1{
     font-family: 'Bona Nova', serif;
+}
+
+p{
+    /* Easier to read text */
+    line-height: 2;
 }
 
 .nav-item{
@@ -25,12 +31,12 @@ h1{
     color: green;
 }
 
-.footer-page{
+.footer{
     /* rem = 16px */
     /* margin - מסגרת */
-    margin: 2rem auto;
+    margin-top: 30%;
     /* padding - מרווח */
-    padding: 2.5rem;
+    padding: 4rem;
     text-align: center;
     background-color: rgb(192, 219, 231);
 }
@@ -38,4 +44,66 @@ h1{
 .center-container{
     margin: 1rem auto;
     text-align: center;
+}
+
+/* Center only the table */
+.center-table{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table, th, td{
+  border: 1px solid rgb(21, 42, 233);
+}
+
+td{
+    width: 30rem;
+}
+
+/* .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  } */
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.member-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.range-paragraph{
+    margin: auto 13rem;
+    font-size: 1.1rem;
+}
+
+.form-container{
+    margin: auto 15rem;
+}
+
+.select-direction{
+    direction: rtl;
 }
