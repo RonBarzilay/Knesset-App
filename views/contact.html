@@ -16,8 +16,19 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
             crossorigin="anonymous"
         />
+
         <!-- My CSS File -->
         <link rel="stylesheet" href="../public/css/styles.css" />
+
+        <!-- My JS File -->
+        <script src="../js/main.js"></script>
+
+        <!-- My jQuery File -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"
+        ></script>
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -74,7 +85,10 @@
             </table>
 
             <br />
-            <h3>אנחנו כאן בשבילך</h3>
+            <br />
+            <br />
+            <h3>אנחנו כאן <span class="color-specific-text">בשבילך</span></h3>
+            <br />
 
             <!-- action= מאיזה עמוד נשלחת הבקשה כדי שהשרת יידע מאיפה הגיעה הבקשה -->
             <!-- form-container כדי להגביל אורך שורות -->
@@ -82,11 +96,11 @@
                 <div class="row form-row">
                     <div class="form-group col-lg-6 col-md-12">
                         <label for="lastName">שם משפחה</label>
-                        <input class="form-control" type="text" name="lastName" id="lastName" />
+                        <input class="form-control" dir="rtl" type="text" name="lastName" id="lastName" />
                     </div>
                     <div class="form-group col-lg-6 col-md-12">
                         <label for="firstName">שם פרטי</label>
-                        <input class="form-control" type="text" name="firstName" id="firstName" />
+                        <input class="form-control" dir="rtl" type="text" name="firstName" id="firstName" />
                     </div>
                 </div>
 
@@ -102,6 +116,24 @@
                             <option value="male">זכר</option>
                             <option value="female">נקבה</option>
                         </select>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="row form-row">
+                    <div class="form-group align-to-right">
+                        <label for="accept">קראתי והנני מאשר\ת את תנאי השימוש</label>
+                        <input type="checkbox" name="accept" id="accept" />
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="row form-row align-to-right">
+                    <div class="form-group">
+                        <button type="button" onclick="isChecked()" class="btn btn-primary" name="submit" id="">
+                            שלח
+                        </button>
                     </div>
                 </div>
             </form>

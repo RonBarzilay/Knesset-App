@@ -107,3 +107,12 @@ td{
 .select-direction{
     direction: rtl;
 }
+
+.color-specific-text{
+    color: rgb(232, 83, 83);
+    font-family: 'Amatic SC', cursive;
+}
+
+.align-to-right{
+    text-align: right;
+}
