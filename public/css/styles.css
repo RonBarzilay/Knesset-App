@@ -59,12 +59,6 @@ table, th, td{
 td{
     width: 30rem;
 }
-
-/* .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  } */
   
 .overlay {
     position: absolute;
@@ -115,4 +109,39 @@ td{
 
 .align-to-right{
     text-align: right;
+}
+
+/* add more space to card-body -> edit bootstrap class */
+.card-body{
+    height: 25rem
+}
+
+/* add more space to card-img -> edit bootstrap class */
+.card-img-top{
+    height: 25rem;
+}
+
+/* login container gives margin for the container */
+.login-container{
+    margin: auto 25rem;
+}
+
+/* login image container gives margin for the login image container  */
+.login-img-container{
+    margin: 2rem 14rem;
+}
+
+/* margin from border gives space in login page fields */
+.margin-from-border{
+    margin: 0.5rem 8rem;
+}
+
+/* space between social icons in footer */
+.social-icons-space{
+    margin: auto 1rem;
+}
+
+/* gives color to login card */
+.login-color{
+    background-image: -webkit-linear-gradient(65deg, #7a93dd 8%, #eff0f5 55%);
 }

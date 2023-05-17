@@ -48,6 +48,14 @@
                     <li class="nav-item" id="contact"><a class="nav-link" href="contact.html">צור קשר</a></li>
                     <li class="nav-item" id="contact"><a class="nav-link" href="members.html">חברי כנסת</a></li>
                     <li class="nav-item" id="home"><a class="nav-link" href="index.html">בית</a></li>
+                    <a class="navbar-brand" href="login.html">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png"
+                            alt="Login icon"
+                            width="45"
+                            height="45"
+                        />
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -92,7 +100,7 @@
 
             <!-- action= מאיזה עמוד נשלחת הבקשה כדי שהשרת יידע מאיפה הגיעה הבקשה -->
             <!-- form-container כדי להגביל אורך שורות -->
-            <form class="form-container" action="/contact" method="post">
+            <form class="form-container" action="mailto:yishaib10@gmail.com" method="get">
                 <div class="row form-row">
                     <div class="form-group col-lg-6 col-md-12">
                         <label for="lastName">שם משפחה</label>
@@ -131,7 +139,7 @@
                 <br />
                 <div class="row form-row align-to-right">
                     <div class="form-group">
-                        <button type="button" onclick="isChecked()" class="btn btn-primary" name="submit" id="">
+                        <button type="submit" onclick="isChecked()" class="btn btn-primary" name="submit" id="">
                             שלח
                         </button>
                     </div>
@@ -141,6 +149,30 @@
 
         <div class="footer">
             <p>כל הזכויות שמורות לכנסת ישראל 2023 ©</p>
+            <a class="navbar-brand social-icons-space" target="_blank" href="https://www.facebook.com/TheKnesset">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png"
+                    alt="Facebook Icon"
+                    width="30"
+                    height="30"
+                />
+            </a>
+            <a class="navbar-brand social-icons-space" target="_blank" href="https://twitter.com/KnessetIL">
+                <img
+                    src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"
+                    alt="Twitter Icon"
+                    width="35"
+                    height="35"
+                />
+            </a>
+            <a class="navbar-brand social-icons-space" target="_blank" href="https://main.knesset.gov.il/">
+                <img
+                    src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-icon-with-png-and-vector-format-for-unlimited-22.png"
+                    alt="Website Icon"
+                    width="30"
+                    height="30"
+                />
+            </a>
         </div>
     </body>
 </html>

@@ -47,14 +47,6 @@
                     <li class="nav-item" id="contact"><a class="nav-link" href="contact.html">צור קשר</a></li>
                     <li class="nav-item" id="contact"><a class="nav-link" href="members.html">חברי כנסת</a></li>
                     <li class="nav-item" id="home"><a class="nav-link" href="index.html">בית</a></li>
-                    <a class="navbar-brand" href="login.html">
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png"
-                            alt="Login icon"
-                            width="45"
-                            height="45"
-                        />
-                    </a>
                 </ul>
             </div>
         </nav>
@@ -63,18 +55,32 @@
     <!-- Change in Each Page - Content -->
     <body>
         <div class="center-container">
-            <h1>אודות הכנסת</h1>
+            <h1>התחברות</h1>
             <br />
-            <h2>הכירו את הכנסת</h2>
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/WMiyCSPbBhY?autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
+            <h2>כל המידע בעמוד אחד - התחבר והתעדכן</h2>
+            <div class="row login-container">
+                <div class="col">
+                    <div class="card login-color">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png"
+                            class="login-img-container"
+                            alt="לוגו התחברות"
+                        />
+                        <form class="" action="" method="post">
+                            <ul class="list-group list-group-flush">
+                                <div class="form-group margin-from-border">
+                                    <label for="email">אימייל</label>
+                                    <input class="form-control" dir="ltr" type="email" name="email" id="email" />
+                                </div>
+                                <div class="form-group margin-from-border">
+                                    <label for="password">סיסמה</label>
+                                    <input class="form-control" dir="ltr" type="password" name="password" id="password" />
+                                </div>
+                                <button onclick="checkUser()" class="btn btn-primary margin-from-border" type="submit">התחבר</button>
+                              </ul>
+                        </form>
+                    </div>
+                </div>
         </div>
 
         <div class="footer">
